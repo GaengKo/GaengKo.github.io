@@ -71,7 +71,9 @@
                   (010) 4247-3383 ·
                   <a href="mailto:gaengko@korea.ac.kr">gaengko@korea.ac.kr</a>
               </div>
-              <p class="lead mb-5"></p>
+              <p class="lead mb-5">
+                  Computer Vision & Deep Learning
+              </p>
               <div class="social-icons">
                   <!--<a href="#">
                   <i class="fab fa-linkedin-in"></i>
@@ -136,7 +138,7 @@
               <ul class="fa-ul mb-0">
                   <li>
                       <i class="fa-li fa fa-certificate text-warning"></i>
-                      Topcit Level 3
+                      Topcit Level 3 - 과학기술정보통신부
                   </li>
                   <li>
                       <i class="fa-li fa fa-certificate text-warning"></i>
@@ -239,7 +241,9 @@
                   <div class="resume-content">
                       <h4 class="mb-0">무인 운송을 위한 환경 인식 및 제어 기술 개발</h4>
                       <div class="subheading mb-3">한국연구재단</div>
-                      <p></p>
+                      <p>
+                          Multi Object Detection and Tracking using Kitti-Dataset
+                      </p>
                   </div>
                   <div class="resume-date text-md-right">
                       <span class="text-primary">September 2019 - Present</span>
@@ -249,10 +253,10 @@
                   <div class="resume-content">
                       <h4 class="mb-0">로봇 청소기 실환경 구속 평가 시험규격 확립</h4>
                       <div class="subheading mb-3">LG전자</div>
-                      <p>빅데이터 수집 및 분석</p>
+                      <p>시장 조사 및 고객 리뷰 빅데이터 수집 및 분석</p>
                   </div>
                   <div class="resume-date text-md-right">
-                      <span class="text-primary">May 2020 - July 2020</span>
+                      <span class="text-primary">April 2020 - July 2020</span>
                   </div>
               </div>
               <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -284,14 +288,45 @@
       </section>
 
       <script>
+          var state1 = true;
+          var state2 = true;
+          var state3 = true;
           function fnMore1() {
-              document.getElementById("divMore1").style.display = "";
+              if (state1) {
+                  document.getElementById("divMore1").style.display = "";
+                  document.getElementById("pMore1").innerText = "접기"
+                  state1 = false;
+              }
+              else {
+                  document.getElementById("divMore1").style.display = "none";
+                  document.getElementById("pMore1").innerText = "더보기"
+                  state1 = true;
+              }
+                  
           }
            function fnMore2() {
-              document.getElementById("divMore2").style.display = "";
+              if (state2) {
+                  document.getElementById("divMore2").style.display = "";
+                  document.getElementById("pMore2").innerText = "접기"
+                  state2 = false;
+              }
+              else {
+                  document.getElementById("divMore2").style.display = "none";
+                  document.getElementById("pMore2").innerText = "더보기"
+                  state2 = true;
+              }
           }
-           function fnMore3() {
-              document.getElementById("divMore3").style.display = "";
+          function fnMore3() {
+               if (state3) {
+                  document.getElementById("divMore3").style.display = "";
+                  document.getElementById("pMore3").innerText = "접기"
+                  state3 = false;
+              }
+              else {
+                  document.getElementById("divMore3").style.display = "none";
+                  document.getElementById("pMore3").innerText = "더보기"
+                  state3 = true;
+              }
           }
       </script>
       <hr class="m-0">
@@ -303,7 +338,7 @@
                   <div class="resume-content">
                       <h4 class="mb-0">보안 클라우드 플랫폼</h4>
                       <div class="subheading mb-3">C#, python, Spring, Mysql </div>
-                      C#을 이용한 채팅 및 실시간 파일 동기화 플랫폼. <b onclick="fnMore1()" style='cursor:pointer'>더보기</b>
+                      C#을 이용한 채팅 및 실시간 파일 동기화 플랫폼. <b id="pMore1" onclick="fnMore1()" style='cursor:pointer'>더보기</b>
                       <br />
                       <div id="divMore1" style="display: none; padding-left:10px; border ">
                           방 생성 시 발급된 암호키 파일이 있어야 참여 및 파일 열람이 가능합니다.
@@ -313,14 +348,14 @@
                       <p></p>
                   </div>
                   <div class="resume-date text-md-right">
-                      <span class="text-primary"><a href="./img/final.pptx">발표자료</a><br><a href="./img/capstone.m4v"></a></span>
+                      <span class="text-primary"><a href="./img/final.pptx">발표자료</a><br><a href="https://drive.google.com/file/d/1Fy3bX3ejQ6lnIsxRPw01LMY2QoVWkGct/view?usp=sharing">시연영상</a></span>
                   </div>
               </div>
               <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                   <div class="resume-content">
                       <h4 class="mb-0">얼굴인식 기반 음식폐기물 처리함</h4>
                       <div class="subheading mb-3">python, opencv, Android Studio, Mysql</div>
-                      라즈베리파이를 이용한 임베디드 시스템입니다. <b onclick="fnMore3()" style='cursor:pointer'>더보기</b>
+                      라즈베리파이를 이용한 임베디드 시스템입니다. <b id="pMore3" onclick="fnMore3()" style='cursor:pointer'>더보기</b>
                       <br />
                       <div id="divMore3" style="display: none; padding-left:10px; border ">
                           규격 봉투가 아닌 음식물 쓰레기의 무게에 따라 요금을 청구할 수 있다면
@@ -330,14 +365,15 @@
                       <p></p>
                   </div>
                   <div class="resume-date text-md-right">
-                      <span class="text-primary"><a href="./img/em.pptx"></a><br><a href="./img/em_video.mp4"></a></span>
+                      <span class="text-primary"><a href="https://drive.google.com/file/d/1dvd2cSac0gmBkjFxOWtemL-EQ2CLX89r/view?usp=sharing">발표자료</a>
+                      <br><a href="https://drive.google.com/file/d/1bhTQbgYZjJbKXd9zX4cXLAy0vcknTH4C/view?usp=sharing">시연영상</a></span>
                   </div>
               </div>
               <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                   <div class="resume-content">
                       <h4 class="mb-0">Poketmon Online Game</h4>
                       <div class="subheading mb-3">C#, python<span style="font-size:15px" class="subheading mb-3"></span></div>
-                      C# Window Form과 python 소켓 서버만을 이용한 포켓몬 게임입니다. <b onclick="fnMore2()" style='cursor:pointer'>더보기</b>
+                      C# Window Form과 python 소켓 서버만을 이용한 포켓몬 게임입니다. <b id="pMore2" onclick="fnMore2()" style='cursor:pointer'>더보기</b>
                       <br />
                       <div id="divMore2" style="display: none; padding-left:10px; border ">
                           어릴적 즐겨하던 게임과 최대한 비슷하게 만들어 보았습니다.
@@ -363,7 +399,7 @@
               </div>
               <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                   <div class="resume-content">
-                      <h4 class="mb-0">자율 주차 RC카</h4>
+                      <h4 class="mb-0">임베디드 시스템을 이용한 자율 주차 RC카</h4>
                       <div class="subheading mb-3">python, opencv</div>
                       라즈베리파이를 이용하여 제작한 RC카에 공간 검출과 동작 알고리즘을 구현하였습니다.
                   </div>
@@ -373,7 +409,7 @@
               </div>
               <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                   <div class="resume-content">
-                      <h4 class="mb-0">수강신청 사이트</h4>
+                      <h4 class="mb-0">모의 수강신청 사이트</h4>
                       <div class="subheading mb-3">html, css, Mysql, php</div>
                       Database 설계 수업 최종 프로젝트입니다.
                   </div>
@@ -395,6 +431,7 @@
 
               <div class="subheading mb-3">Programming Languages &amp; Tools</div>
               <ul class="list-inline dev-icons">
+                  <br>Tensorflow, MySQL, C, C#<br>
                   <li class="list-inline-item">
                       <i class="fab fa-html5"></i>
                   </li>
@@ -418,7 +455,6 @@
                   </li>
                   <li class="list-inline-item">
                       <i class="fab fa-linux"></i>
-                      MySQL, C, C#
               </ul>
 
               <!--<div class="subheading mb-3">Workflow</div>
